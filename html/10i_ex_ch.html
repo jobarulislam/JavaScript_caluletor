@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculetor</title>
+    <link rel="stylesheet" href="../css/10i_ex_ch.css">
+    <script src="../js/10i_ex_ch.js" defer></script>
+</head>
+<body>
+    <div class="screen">
+    <div class="button result"></div>
+    </div>
+    <div class="button">
+        <button class="btn clear" onclick="clearCalculation()">C</button>
+        <button class="btn sign persent" onclick="percentage()">%</button>
+        <button class="btn back" onclick="removeLast()">&larr;</button>
+        <button class="btn sign divition" onclick="updateCalculation('/')">&divide;</button>
+
+    </div>
+    <div class="button">
+        <button class="btn number seven" onclick="updateCalculation('7')">7</button>
+        <button class="btn number eight" onclick="updateCalculation('8')">8</button>
+        <button class="btn number nine" onclick="updateCalculation('9')">9</button>
+        <button class="btn sign multification" onclick="updateCalculation('*')">x</button>
+
+    </div>
+    <div class="button">
+        <button class="btn number four" onclick="updateCalculation('4')">4</button>
+        <button class="btn number five" onclick="updateCalculation('5')">5</button>
+        <button class="btn number six" onclick="updateCalculation('6')">6</button>
+        <button class="btn sign minuse" onclick="updateCalculation('-')">-</button>
+
+    </div>
+    <div class="button">
+        <button class="btn number one" onclick="updateCalculation('1')">1</button>
+        <button class="btn number two" onclick="updateCalculation('2')">2</button>
+        <button class="btn number three" onclick="updateCalculation('3')">3</button>
+        <button class="btn sign pluse" onclick="updateCalculation('+')">+</button>
+
+    </div>
+    <div class="button">
+        <button class="btn number zero" onclick="updateCalculation('0')">0</button>
+        <button class="btn point" onclick="updateCalculation('.')">.</button>
+        <button class="btn equal" onclick=" equal()">=</button>
+    </div>
+    <div class="button">
+        <button class="history" onclick="showHistory()">History</button>
+    </div>
+
+</body>
+</html>
